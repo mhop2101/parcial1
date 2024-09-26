@@ -45,10 +45,10 @@ function UserPage() {
                             <Row key={i} className="mb-2">
 
                                 <Col key={i} onClick={() => handleShowModal('https://st.depositphotos.com/1836657/2734/i/450/depositphotos_27347807-stock-photo-bicycle-race.jpg', '')}>
-                                    <Image src="https://st.depositphotos.com/1836657/2734/i/450/depositphotos_27347807-stock-photo-bicycle-race.jpg" thumbnail />
+                                    <Image src="https://st.depositphotos.com/1836657/2734/i/450/depositphotos_27347807-stock-photo-bicycle-race.jpg" />
                                 </Col>
                                 <Col key={i} onClick={() => handleShowModal('https://st.depositphotos.com/1836657/2734/i/450/depositphotos_27347807-stock-photo-bicycle-race.jpg', '')}>
-                                    <Image src="https://st.depositphotos.com/1836657/2734/i/450/depositphotos_27347807-stock-photo-bicycle-race.jpg" thumbnail />
+                                    <Image src="https://st.depositphotos.com/1836657/2734/i/450/depositphotos_27347807-stock-photo-bicycle-race.jpg" />
                                 </Col>
 
                             </Row>
@@ -63,10 +63,10 @@ function UserPage() {
                             <Row key={i} className="mb-2">
 
                                 <Col key={i} onClick={() => handleShowModal('https://www.iberdrola.com/documents/20125/39940/running-mas-que-moda-746x419.jpg/40c26194-0a55-beff-b5f2-7cc4ca7533ce?t=1704699183011', '')}>
-                                    <Image src="https://www.iberdrola.com/documents/20125/39940/running-mas-que-moda-746x419.jpg/40c26194-0a55-beff-b5f2-7cc4ca7533ce?t=1704699183011" thumbnail />
+                                    <Image src="https://www.iberdrola.com/documents/20125/39940/running-mas-que-moda-746x419.jpg/40c26194-0a55-beff-b5f2-7cc4ca7533ce?t=1704699183011" />
                                 </Col>
                                 <Col key={i} onClick={() => handleShowModal('https://www.iberdrola.com/documents/20125/39940/running-mas-que-moda-746x419.jpg/40c26194-0a55-beff-b5f2-7cc4ca7533ce?t=1704699183011', '')}>
-                                    <Image src="https://www.iberdrola.com/documents/20125/39940/running-mas-que-moda-746x419.jpg/40c26194-0a55-beff-b5f2-7cc4ca7533ce?t=1704699183011" thumbnail />
+                                    <Image src="https://www.iberdrola.com/documents/20125/39940/running-mas-que-moda-746x419.jpg/40c26194-0a55-beff-b5f2-7cc4ca7533ce?t=1704699183011" />
                                 </Col>
 
                             </Row>
@@ -79,10 +79,10 @@ function UserPage() {
                             <Row key={i} className="mb-2">
 
                                 <Col key={i} onClick={() => handleShowModal('https://d1s9j44aio5gjs.cloudfront.net/2016/07/The_Benefits_of_Swimming.jpg', '')}>
-                                    <Image src="https://d1s9j44aio5gjs.cloudfront.net/2016/07/The_Benefits_of_Swimming.jpg" thumbnail />
+                                    <Image src="https://d1s9j44aio5gjs.cloudfront.net/2016/07/The_Benefits_of_Swimming.jpg" />
                                 </Col>
                                 <Col key={i} onClick={() => handleShowModal('https://d1s9j44aio5gjs.cloudfront.net/2016/07/The_Benefits_of_Swimming.jpg', '')}>
-                                    <Image src="https://d1s9j44aio5gjs.cloudfront.net/2016/07/The_Benefits_of_Swimming.jpg" thumbnail />
+                                    <Image src="https://d1s9j44aio5gjs.cloudfront.net/2016/07/The_Benefits_of_Swimming.jpg" />
                                 </Col>
 
                             </Row>
