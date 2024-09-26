@@ -1,0 +1,78 @@
+{
+    "sports": {
+        "cycling": [
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Cycling Image 1"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Cycling Image 2"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Cycling Image 3"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Cycling Image 4"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Cycling Image 5"
+            }
+        ],
+        "running": [
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Running Image 1"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Running Image 2"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Running Image 3"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Running Image 4"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Running Image 5"
+            }
+        ],
+        "swimming": [
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Swimming Image 1"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Swimming Image 2"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Swimming Image 3"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Swimming Image 4"
+            },
+            {
+                "image": "https://via.placeholder.com/100",
+                "text": "Swimming Image 5"
+            }
+        ]
+    },
+    "footer": {
+        "profilePicture": "https://via.placeholder.com/50",
+        "times": {
+            "cycling": "30 min",
+            "running": "45 min",
+            "swimming": "20 min"
+        }
+    }
+}
