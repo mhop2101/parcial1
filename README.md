@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Parcial Tecnologías Web 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Parcial de la materia Programacioón con Tecnologías Web.
 
-## Available Scripts
+## Tabla de Contenidos
 
-In the project directory, you can run:
+- [Instalación](#instalación)
+- [Ejecución](#ejecución)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Componentes Principales](#componentes-principales)
+- [Decisiones de Desarrollo](#decisiones-de-desarrollo)
 
-### `npm start`
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para instalar las dependencias del proyecto, ejecuta el siguiente comando en la raíz del proyecto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+## Ejecución
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para iniciar la aplicación, ejecuta el siguiente comando:
 
-### `npm run build`
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+La aplicación se ejecutará en [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estructura del Proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La estructura de directorios del proyecto es la siguiente:
 
-### `npm run eject`
+```
+src
+    ├── App.js
+    ├── LanguageSwitcher.js
+    ├── LoginPage.js
+    ├── UserPage.js
+    ├── i18n.js
+    └── index.js
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Componentes Principales
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **LoginPage**: Este componente permite a los usuarios ingresar sus credenciales. En caso de un inicio de sesión exitoso, redirige al usuario a la `UserPage`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **UserPage**: Este componente muestra los datos del usuario después de que han iniciado sesión.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **LanguageSwitcher**: Este componente se encuentra en ambas páginas (LoginPage y UserPage) y permite a los usuarios cambiar el idioma de la aplicación entre español e inglés.
 
-## Learn More
+4. **index.js**: Este es el punto de entrada principal de la aplicación donde se inicializa React y se aplica el enrutamiento utilizando `react-router-dom`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Decisiones de Desarrollo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Inicialización del Proyecto**: Se utilizó `Create React App` para inicializar el proyecto
 
-### Code Splitting
+- **Estilo y Diseño**: Se incorporó `Bootstrap` para el diseño y estilo de la interfaz de usuario.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Navegación**: Se implementó `react-router-dom` para manejar el enrutamiento entre las diferentes páginas de la aplicación.
 
-### Analyzing the Bundle Size
+- **Internacionalización**: Se utilizó `i18n` para permitir que la aplicación soporte múltiples idiomas. Se configuró para que el idioma por defecto sea español.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
