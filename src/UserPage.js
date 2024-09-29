@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Modal, Button, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
+
 
 function UserPage() {
     const [userData, setUserData] = useState(null);
     const [sportData, setSportData] = useState(null);
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState({ image: '', text: '' });
+
+    const { t } = useTranslation();
 
     // DATOS DE USUARIO
     useEffect(() => {
@@ -36,10 +41,11 @@ function UserPage() {
 
     return (
         <div>
+            <LanguageSwitcher></LanguageSwitcher>
             <Container>
                 <Row>
                     <Col >
-                        <h1>Cycling</h1>
+                        <h1>{t('cycling')}</h1>
 
                         {[...Array(5)].map((_, i) => (
                             <Row key={i} className="mb-2">
@@ -57,7 +63,7 @@ function UserPage() {
 
                     <Col>
 
-                        <h1>Running</h1>
+                        <h1>{t('running')}</h1>
 
                         {[...Array(5)].map((_, i) => (
                             <Row key={i} className="mb-2">
@@ -73,7 +79,7 @@ function UserPage() {
                         ))}
                     </Col>
                     <Col>
-                        <h1>Swimming</h1>
+                        <h1>{t('swimming')}</h1>
 
                         {[...Array(5)].map((_, i) => (
                             <Row key={i} className="mb-2">
@@ -121,13 +127,13 @@ function UserPage() {
                                 <h2>{userData.nombre}</h2>
                             </Col>
                             <Col>
-                                <h3> <b>Cycling:</b> {userData.mt_cicla.substring(0, 4)}</h3>
+                                <h3> <b>{t('cycling')}:</b> {userData.mt_cicla.substring(0, 4)}</h3>
                             </Col>
                             <Col>
-                                <h3>  <b>Running:</b> {userData.mt_corriendo.substring(0, 4)}</h3>
+                                <h3>  <b>{t('running')}:</b> {userData.mt_corriendo.substring(0, 4)}</h3>
                             </Col>
                             <Col>
-                                <h3>  <b>Swimming:</b> {userData.mt_nadando.substring(0, 4)}</h3>
+                                <h3>  <b>{t('swimming')}:</b> {userData.mt_nadando.substring(0, 4)}</h3>
                             </Col>
                         </Row>
                     </Container>
